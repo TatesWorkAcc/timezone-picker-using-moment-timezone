@@ -6,7 +6,7 @@ In the modal you click another button that creates a drop down menu for 3 other 
 
 On the buttons is 3 different cities and clicking them will display the current time in that time zone.  
 
-After looking at it I probably should've added an element that changes per click but I don't wanna.
+After looking at it I probably should've added a text element that changes to the timezone when a button is clicked but I don't wanna.
 
 Uses npm install moment moment-timezone  
 
