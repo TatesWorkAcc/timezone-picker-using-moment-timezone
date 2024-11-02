@@ -8,6 +8,8 @@ On the buttons is 3 different cities and clicking them will display the current 
 
 After looking at it I probably should've added an element that changes per click but I don't wanna.
 
+Uses npm install moment moment-timezone  
+
 Example 1  
 ![example 1](https://github.com/user-attachments/assets/d0a25753-42c1-4514-bf88-a6b07fb9fc3a)  
 Example 2  
