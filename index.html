@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+    <!-- these 2 scripts are moment and moment time-zone -->
+
+    <title>Modal Example</title>
+</head>
+<body>
+    <h1 id="title">Current Time</h1>
+    <h2 id="time"></h2>
+    <!-- this is going to be the time that is updated to a timezone from clicking abutton -->
+
+    <button id="openModal">Pick a timezone</button> 
+    <!-- Button that will open the modal -->
+
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+         <!-- Modal container with an ID for targeting -->
+
+        <div class="modal-content"> 
+            <!-- Inner container for modal content -->
+
+            <span class="close" id="closeModal">&times;</span> 
+            <!-- Close button (×) -->
+
+            <h2 id="modaltit">Pick a timezone</h2> 
+            <!-- Header for the modal -->
+
+
+            <!-- Below is going to be the dropdown box -->
+             <div class="dropdown">
+                <button id="DropButton" onclick="showDropMenu();">Pick a timezone</button>
+                <!-- button for the dropdown menu -->
+                <div class="content" id="DropDownContent">
+                    <div class="button-container">
+                        <button id="las">Las Vegas, Nevada</button>
+                        <button id="den">Denver, Colorado</button>
+                        <button id="pen">Pensacola, Florida</button>
+                        <!-- the button options for the timezones clicking these will run a function in the script.js -->
+                    </div>
+                </div>
+             </div>
+    </div>
+
+    <script src="script.js" defer></script> <!-- Link to the external JavaScript file for functionality, its included last to let the html load first-->
+</body>
+</html>
